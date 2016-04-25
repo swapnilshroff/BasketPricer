@@ -45,7 +45,7 @@ public class BasketPricingTest {
 		for (int i = 0; i < args.length; i=i+2) {
 			Item item = getItem(args[i]);
 			int qty = getQty(args[i+1]);
-			if(item==null || qty == 0){
+			if(item==null || qty <= 0){
 				System.out.println("Invalid item or quantity " + args[i] + args[i+1]);
 				continue;
 			}
